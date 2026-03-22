@@ -10,7 +10,7 @@ Vulnerability: buffer overflow
 Firmware Download:https://www.tenda.com.cn/material/show/619863173935173
 # Descriptions
 We found an overflow vulnerability in `libgo.so` :
-In formstaticRouteListGet function,it reads in a user-provided parameter `network`,
+In formstaticRouteListSet function,it reads in a user-provided parameter `network`,
 <img width="910" height="226" alt="image" src="https://github.com/user-attachments/assets/3636e843-c4c5-4cc1-921e-73c9d156c265" />
 The network value, obtained via the websGetJsonVarfunction, is passed to the JsonVarparameter. This JsonVarparameter is then unsafely concatenated into the sbuffer using the sprintffunction. The root cause is the complete absence of any length validation or restriction on the JsonVarinput throughout this process.​ This flaw allows an attacker to supply an arbitrarily long string for the networkfield, which sprintfwill write into the fixed-size buffer s, resulting in a stack-based buffer overflow.
 <img width="1508" height="512" alt="image" src="https://github.com/user-attachments/assets/eeacfb22-1ffb-41c3-ad74-3d09687dd94d" />
