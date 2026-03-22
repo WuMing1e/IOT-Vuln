@@ -16,6 +16,7 @@ The network value, obtained via the websGetJsonVarfunction, is passed to the Jso
 <img width="1508" height="512" alt="image" src="https://github.com/user-attachments/assets/eeacfb22-1ffb-41c3-ad74-3d09687dd94d" />
 As a result, by requesting the page, an attacker can easily execute a denial of service attack or remote code execution.
 # Proof of Concept (PoC)
+httpd dynamically links against libgo.so
 The data packets are encrypted using AES in CBC mode. The encryption key and stok are extracted from the 'sign' and 'stok' fields in the login response packet, respectively.
 
 IV：EU5H62G9ICGRNI43
