@@ -7,7 +7,7 @@ Version: V16.03.53.10
 
 Vulnerability: buffer overflow
 
-Firmware Download:https://www.tenda.com.cn/material/show/619863173935173
+Firmware Download:https://www.tenda.com.cn/prod/api/data/center/download/541288615886917/619863173935173
 # Descriptions
 We found an overflow vulnerability in `libgo.so` :
 In formPortListSet function,it reads in a user-provided parameter `intranetIP`,
